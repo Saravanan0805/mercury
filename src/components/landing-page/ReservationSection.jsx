@@ -23,8 +23,8 @@ export const ReservationSection = () => {
         </div>
         <div className="p-4">
           <form onSubmit={handleSubmit} className="flex flex-col gap-5 border border-white rounded-sm w-[300px]">
-            <input type="date" id="datepicker" name="datepicker" value={date} onChange={(e)=>setDate(e.target.value) } className="h-12 underline text-black px-1" />
-            <input type="time" id="timepicker" name="timepicker"  value={time} onChange={(e)=> setTime(e.target.value)} className="h-12 underline text-black px-1" />
+            <input type="date" id="datepicker" name="datepicker" value={date} onChange={(e)=>setDate(e.target.value) } className="h-12 underline text-black px-1 w-full" />
+            <input type="time" id="timepicker" name="timepicker"  value={time} onChange={(e)=> setTime(e.target.value)} className="h-12 underline text-black px-1 w-full" />
             <select id="dropdown" name="dropdown" value={option} onChange={(e=>setOption(e.target.value))} className="h-12 text-black underline">
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
