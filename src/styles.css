@@ -16,6 +16,10 @@ h6 {
     font-family: var(--font-inter), sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .black-background {
     background-color: black;
 }
@@ -75,4 +79,35 @@ h6 {
 .content {
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
+
+.responsive-img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+  }
+  
+  /* Adjust image sizes for different screen sizes */
+  @media screen and (max-width: 768px) {
+    .responsive-img {
+      width: 50%; /* Adjust image width for screens up to 768px */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .responsive-img {
+      width: 80%; /* Adjust image width for screens up to 480px */
+    }
+  }
+  
+  /* Define custom percentage units */
+:root {
+    --pc: calc(100% / 100);
+  }
+  
+  .left-18pc {
+    left: calc(18 * var(--pc));
+  }
+  
+  .right-26pc {
+    right: calc(26 * var(--pc));
+  }

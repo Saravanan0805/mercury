@@ -3,44 +3,41 @@ import { LiaFacebookSquare } from "react-icons/lia";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#333333] text-white pt-[60px] pb-[10px]">
-      <div className="w-full">
-        <div>
-          <div className="pb-[60px] flex justify-center items-center font-semibold text-3xl">
-            <h1 className="">
-            Bring Chef Stephanie Izard&apos;s bold, restaurant flavors home
-            with&nbsp;
+    <footer className="bg-[#333333] text-white pt-16 pb-6 md:pt-24 md:pb-10">
+      <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="pb-2 md:pb-3 flex flex-col items-center justify-center text-center">
+          <h1 className="pb-6 md:pb-12 text-lg md:text-xl lg:text-2xl font-semibold">
+            Bring Chef Stephanie Izard's bold, restaurant flavors home with{" "}
             <u>This Little Goat</u>!
-            </h1>
-          </div>
-          <div className="pb-10">
-
-          <div className="w-3/4 m-auto">
-          <div className="flex flex-col justify-center items-center sm:flex-row sm:justify-center sm:gap-x-20">
-
-              <div className="py-[10px] font-semibold text-2xl">Mercury</div>
-              <div className="flex justify-center gap-x-5 w-full font-medium sm:flex-wrap">
-                <p>website accessibility</p>
-                <p>site map</p>
-                <p>join our team</p>
-                <p>press inquiries</p>
-                <p>email newsletter</p>
-              </div>
-              <div className="flex items-center font-light">
-                <LiaFacebookSquare className="h-10 w-10" />
-                <FaInstagram className="h-[33px] w-[33px]" />
-              </div>
+          </h1>
+          <div className="flex flex-col md:flex-row md:flex-warp justify-center items-center gap-6 md:gap-x-20">
+            <div className="text-base md:text-lg font-semibold">Mercury</div>
+            <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-x-10">
+              <p className="py-1 md:py-0">Website Accessibility</p>
+              <p className="py-1 md:py-0">Site Map</p>
+              <p className="py-1 md:py-0">Join Our Team</p>
+              <p className="py-1 md:py-0">Press Inquiries</p>
+              <p className="py-1 md:py-0">Email Newsletter</p>
+            </div>
+            <div className="flex justify-center items-center">
+              <LiaFacebookSquare className="h-8 w-8 mr-4 md:h-10 md:w-10" />
+              <FaInstagram className="h-8 w-8 md:h-9 md:w-9" />
             </div>
           </div>
-          <div className="flex justify-center items-center">
-            <p>
-            Visit our sister restaurants&nbsp; <u>Cabra</u>,&nbsp; <u>Duck Duck Goat</u>, and&nbsp; <u>Little Goat Diner</u>     
-            </p>
-          </div>
-          </div>
+
+          <p className="text-xs md:text-sm pt-2">
+            Visit our sister restaurants <u>Cabra</u>, <u>Duck Duck Goat</u>,
+            and <u>Little Goat Diner</u>
+          </p>
         </div>
       </div>
-        <p className="flex justify-center items-center text-sm"> © 2023 <u>Boka Restaurant Group</u>, LLC. All Rights Reserved</p>
+      <div className="bg-[#333333] text-white py-8 md:pt-3 md:pb-1">
+        <div className="flex items-center justify-center text-center">
+          <p className="text-xs md:text-sm">
+            © 2023 <u>Boka Restaurant Group</u>, LLC. All Rights Reserved
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
