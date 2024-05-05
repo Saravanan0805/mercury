@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const ReservationSection = () => {
   // State variables to store form values
   const [date, setDate] = useState("2024-05-15");
   const [time, setTime] = useState("06:26");
   const [option, setOption] = useState(""); // Default option
+
+  useEffect(() => {
+    // Check if the URL has a hash and navigate to the corresponding section
+    const hash = window.location.hash;
+    if (hash === "#reserve") {
+      const reserveSection = document.getElementById("reserve");
+      if (reserveSection) {
+        reserveSection.scrollIntoView();
+      }
+    }
+  }, []);
 
   // Function to handle form submission
   const handleSubmit = (e) => {

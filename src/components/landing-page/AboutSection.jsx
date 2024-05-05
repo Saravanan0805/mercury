@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const AboutSection = () => {
+  
+  useEffect(() => {
+    // Check if the URL has a hash and navigate to the corresponding section
+    const hash = window.location.hash;
+    if (hash === "#about") {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView();
+      }
+    }
+  }, []);
+
   return (
     <div className="bg-[#333333] text-white py-20" id="about">
       <div className="grid grid-cols-1  md:grid-cols-2 w-full max-w-screen-lg mx-auto gap-10">

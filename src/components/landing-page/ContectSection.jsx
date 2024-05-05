@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export const ContectSection = () => {
+
+  useEffect(() => {
+    // Check if the URL has a hash and navigate to the corresponding section
+    const hash = window.location.hash;
+    if (hash === "#content") {
+      const contectSection = document.getElementById("content");
+      if (contectSection) {
+        contectSection.scrollIntoView();
+      }
+    }
+  }, []);
+  
   return (
     <div className="bg-[#333333] py-10 sm:py-20 text-white" id="content">
       <div className="flex flex-col sm:flex-row justify-evenly items-center flex-wrap max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

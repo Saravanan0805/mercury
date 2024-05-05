@@ -49,7 +49,7 @@ export default function NaVBar() {
                     item.href[0] === "#" ? (
                       <a
                         key={item.name}
-                        href={item.href}
+                        href={`/${item.href}`}
                         className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-sm font-medium capitalize text-white"
                       >
                         {item.name}
@@ -78,7 +78,7 @@ export default function NaVBar() {
                     {navigation_end.map((item) => (
                       <a
                         key={item.name}
-                        href={item.href}
+                        href={`/${item.href}`}
                         className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-sm font-medium capitalize text-white"
                       >
                         {item.name}
@@ -95,7 +95,7 @@ export default function NaVBar() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  href={ item.href[0] === "#" ?`/${item.href}` : item?.href}
                   className="hover:underline hover:decoration-solid hover:decoration-[1.5px] capitalize rounded-md px-3 py-2 text-sm font-normal text-white block w-full text-center"
                 >
                   {item.name}
