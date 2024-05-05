@@ -21,7 +21,7 @@ const Homepage = () => {
         <AboutSection />
         <ReservationSection />
         <CakeSection />
-        <HardSection />
+        {/* <HardSection /> */}
         <Footer />
       </div>
     </div>
