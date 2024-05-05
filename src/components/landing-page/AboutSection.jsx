@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 export const AboutSection = () => {
-  
   useEffect(() => {
     // Check if the URL has a hash and navigate to the corresponding section
     const hash = window.location.hash;
@@ -33,10 +32,10 @@ export const AboutSection = () => {
           />
         </div>
         <div className="text-center md:text-left px-4">
-          <h1 className="mt-5 mb-5 md:mb-10 md:text-center">
+          <h1 className="mt-5 mb-5 md:mb-10 md:text-center font-bold">
             MERCURY KINGSTON
           </h1>
-          <p className="mt-5 mb-5 md:mb-10">
+          <p className="mt-5 mb-5 md:mb-10 text-center">
             At Mercury, our culinary ethos is all about pushing boundaries and
             exploring new horizons. Our menu is a vibrant fusion of western
             culinary traditions and Asian influences,meticulously crafted to
