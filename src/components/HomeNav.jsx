@@ -68,7 +68,7 @@ export default function NaVBar() {
               </div>
 
               <div className="flex items-center text-white text-lg font-semibold justify-center sm:items-stretch">
-                <Link to="/">Mercury</Link>
+                <Link to="/"><img src="\Logo_mercury-white_png.png" alt="mercury" width={200} height={200}/>  </Link>
               </div>
 
               <div className="hidden sm:ml-6 sm:block">
