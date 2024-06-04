@@ -1,4 +1,3 @@
-
 // Drinks menu
 
 export const cocktail = [
@@ -84,7 +83,7 @@ export const ciderContent = [
     name: "Isastegi",
     message: "Basque Country, Spain . 750 mL (6% abv)",
     page: 24,
-  }
+  },
 ];
 
 export const spiritContent = [
@@ -102,7 +101,7 @@ export const spiritContent = [
     name: "phony negroni",
     message: "St. Agrestis . Brooklyn, NY . 6.76oz",
     page: 15,
-  }
+  },
 ];
 
 export const winesContent = [
@@ -110,188 +109,242 @@ export const winesContent = [
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
   {
     name: "prosecco",
     message: "Le Colture . Brut Fagher . Valdobbiadene",
     glass: 16,
-    bottle: 80
+    bottle: 80,
   },
 ];
-
 
 // Food Menu's
 
 export const breadContent = [
   {
-    name: "olive focaccia",
-    message: "whipped ricotta . pickle relish",
-    page: 16,
+    name: "Tender Mix Green Salad GF",
+    message:
+      "artisanal Greens . shaved carrots . cucumber . bell peppers . balasmic dressing. signature house salad",
+    page: 15,
   },
   {
-    name: "naan & dips",
-    message: "tahini tofu . tzatziki",
-    page: 16,
-  }
+    name: "Caesar Salad",
+    message:
+      "crisp romaine . parmesan . garlic croutons . bacon . creamy caesar dressing . add chicken - $9 or shrimp $12",
+    page: 17,
+  },
 ];
 
 export const veggiesContent = [
   {
-    name: "roasted asparagus",
-    message: "ramp-golden beet giardinaire . yuzu kosho . party nuts",
-    page: 17,
+    name: "Broccoli Cheddar",
+    message: "veg",
+    page: 9,
   },
   {
-    name: "wood fired broccoli",
-    message: "harissa dill vinaigrette . moody blue labneh",
-    page: 17,
-  },
-  {
-    name: "chickpea fritters",
-    message: "goat yogurt . green chutney . sev spice crunch . pickled rhubarb",
-    page: 17,
-  },
-  {
-    name: "sautéed green beans",
-    message: "fish sauce vinaigrette . cashews",
-    page: 18,
+    name: "Thai Chicken Soup",
+    message: "chicken",
+    page: 12,
   },
 ];
 
 export const fishContent = [
   {
-    name: "ora king salmon poke",
-    message: "strawberry . cherry tomato . chili crunch",
-    page: 24,
+    name: "Sambal Chicken Skewers GF",
+    message: "four skewers . sambal oelek . sweet chilly",
+    page: 18,
   },
   {
-    name: "shrimp salad",
-    message: "avocado . strawberries . quinoa crunch . pickled veggies . limey-herby dressing",
-    page: 24,
+    name: "Togarashi Sesame Crusted Tuna",
+    message: "soba noodles . julienne cut vegetables with asian dressing",
+    page: 29,
   },
   {
-    name: "pan-roasted halibut",
-    message: "miso marcona almond butter . spring onions . blueberry nuoc cham",
-    page: 32,
-  }
+    name: "Avocado Infused Hummus GF, Veg",
+    message: "served with fresh seasonal vegetables and pumpkin seeds",
+    page: 16,
+  },
+  {
+    name: "Jalapeno Poppers, Veg",
+    message:
+      "deep fried breaded jalapeno .  creamy cheese filling . parmesan . raspberry sauce",
+    page: 16,
+  },
+  {
+    name: "Ricotta Rendezvous",
+    message:
+      "ricotta cheese . sour dough . spice roasted cherry tomatoes . creamy roasted bell pepper",
+    page: 17,
+  },
+  {
+    name: "Turkey Delight Poutine",
+    message: "braised turkey . cranberry mayo . crispy kale",
+    page: 18.3,
+  },
+  {
+    name: "Chicken Wings",
+    message: "sticky bbq glaze/honey garlic/house hot sauce",
+    page: 18,
+  },
+  {
+    name: "Coco-licious Shrimp GF",
+    message: "house sauce . grated coconut . curry leaves",
+    page: 25,
+  },
+  {
+    name: "Keetle Chip Nachos - Small",
+    message:
+      "kettle chips . jalapeno . 3 cheese . salsa sour cream . add guac - $3 . add chicken - $6 . add beef - $6 . ( Large - $21)",
+    page: 17,
+  },
+  {
+    name: "Mercury Beef Medley",
+    message: "crispy beef strips . jalapeno . peppers . honey garlic",
+    page: 24.5,
+  },
+  {
+    name: "Chicken Fingers",
+    message: "5 pc of chicken fingers . plum sauce",
+    page: 18,
+  },
 ];
 
 export const goatContent = [
   {
-    name: "goat empanadas",
-    message: "avocado crema . chili lime crunch . fried plantains",
-    page: 22,
+    name: "Itaewon Beef Burger",
+    message:
+      "pulled beef brisket . gochujang mayo . kimchi . aged cheddar . side of house fries or salad",
+    page: 20,
   },
   {
-    name: "confit goat belly",
-    message: "'rice n' beans' . pikliz . coconut vinaigrette",
+    name: "Pasta Chicken Wrap",
+    message:
+      "pasta salad with chicken stuffed in tortilla . side of house fries or salad",
+    page: 19,
+  },
+];
+
+export const meatContent = [
+  {
+    name: "Confit Duck & Waffle",
+    message: "crispy duck leg . sunnyside egg . mustard maple syrup",
+    page: 34,
+  },
+  {
+    name: "Fish N Chips",
+    message:
+      "house made coleslaw . mashed peas . tartar sauce and crisp chips . add extra pc of fish - $6",
+    page: 19,
+  },
+  {
+    name: "Butter Chicken GF",
+    message:
+      "creamy tomato and cashew sauce . sous vide chicken . basmati rice",
+    page: 26,
+  },
+  {
+    name: "Flame - Kissed Stripolin GF",
+    message:
+      "fire grilled 10oz stripolin . seasonal vegetable . demi glaze . add shrims - $8. choice f mash potatoes or fries or caesar salad",
     page: 37,
   },
   {
-    name: "goat liver mousse",
-    message: "crumpets . b&b pickles . strawberry mostarda . ramp-golden beet giardinaire",
+    name: "Seared Salmon GF",
+    message: "salmon fillet . thai' bean ragu . seasonal vegetable",
+    page: 35,
+  },
+  {
+    name: "Rustic Lamb Shank GF",
+    message:
+      "slow cooked lamb shank on a bed of mash potato . seasonal vegetables and jus",
+    page: 35,
+  },
+  {
+    name: "Korean BBQ Short Ribs GF",
+    message: "marinated beef short ribs . rice . kimchi . sauteed vegetables",
+    page: 29,
+  },
+  {
+    name: "Moroccan Harvest Stew (Vegan, GF)",
+    message: "moroccan spiced vegetable stew . coconut cream and basmati rice",
     page: 19,
-  }
-];
-    
-export const meatContent = [
-  {
-    name: "crabby bbq pork belly",
-    message: "crab butter . grilled pickles . fingerling potato chips",
-    page: 24,
   },
   {
-    name: "crispy short ribs",
-    message: "chop-chae . grilled pineapple . spicy chili crunch",
-    page: 32,
+    name: "Seafood Linguine",
+    message: "shrimp . scallops . mussels . tomato sauce . olive oil",
+    page: 27,
   },
   {
-    name: "grilled chicken skewers",
-    message: "cashew butter . savory mushroom oil . crispy sunchokes",
-    page: 28,
-  },
-  {
-    name: "roasted pig face",
-    message: "sunny side egg . tamarind . cilantro . red wine-maple . potato stix",
-    page: 24,
-  },
-  {
-    name: "sticky glazed pork shank",
-    message: "cucumber chili crunch salad . grilled ramp kimchi . hot mustard mayo . ramp ranch",
-    page: 42,
+    name: "Seasonal Vegetabe Penne Veg",
+    message:
+      "rose sauce . seasonal vegetable . gluten free past available . side - mash potato - $6 . basmati rice - $6 . fries - $6",
+    page: 20,
   },
 ];
 
 export const dessertContent = [
   {
-    name: "plantain tres leches",
-    message: "spiced pepitas . sour cream gelato . cajeta",
-    page: 15,
+    name: "Chocolate Decadence GF, Vegan",
+    message: "coconut cream . chocolate glaze",
+    page: 11,
   },
   {
-    name: "hazelnut praline sundae",
-    message: "brown butter blondie . tamarind caramel . candied hazelnuts",
-    page: 15,
+    name: "Caramel Affogato GF",
+    message: "vanilla ice cream . espresso",
+    page: 13,
   },
   {
-    name: "strawberries & cream semifreddo",
-    message: "tahini cake . sesame caramel . pickled strawberries",
-    page: 15,
-  },
-  {
-    name: "chocolate passion sundae",
-    message: "passionfruit sorbet . crinkle cookie . choco fun crunch . chocolate caramel whip",
-    page: 15,
+    name: "Mango Panna Cotta GF",
+    message: "silky smooth cream . mango jelly",
+    page: 12,
   },
 ];
-
-

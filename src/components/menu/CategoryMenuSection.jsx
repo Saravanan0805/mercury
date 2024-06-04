@@ -54,12 +54,12 @@ export const CategoryMenuSection = ({ title }) => {
         </>
       ) : (
         <>
-          <CategoryContent title="BREAD" content={breadContent} />
-          <CategoryContent title="VEGGIES" content={veggiesContent} />
-          <CategoryContent title="FISH" content={fishContent} />
-          <CategoryContent title="MEAT" content={meatContent} />
-          <CategoryContent title="GOAT" content={goatContent} />
-          <CategoryContent title="DESSERT" content={dessertContent} />
+          <CategoryContent title="Green Galore" content={breadContent} />
+          <CategoryContent title="Soul-Warming" content={veggiesContent} />
+          <CategoryContent title="Social Plate" content={fishContent} />
+          <CategoryContent title="Handheld Delights" content={meatContent} />
+          <CategoryContent title="Main Attraction" content={goatContent} />
+          <CategoryContent title="Tempting Treats" content={dessertContent} />
         </>
       )}
       <div className="mb-16">
