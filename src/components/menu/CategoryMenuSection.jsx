@@ -62,7 +62,7 @@ export const CategoryMenuSection = ({ title }) => {
           <CategoryContent title="Tempting Treats" content={dessertContent} />
         </>
       )}
-      <div className="mb-16">
+      {/* <div className="mb-16">
         <h1 className="flex justify-center items-center mb-10 font-bold">
           SURCHARGE
         </h1>
@@ -72,7 +72,7 @@ export const CategoryMenuSection = ({ title }) => {
           all checks. We do this in lieu of increased menu prices. You may
           request to have this taken off your check, should you choose.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
