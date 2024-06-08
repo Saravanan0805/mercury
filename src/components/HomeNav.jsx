@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const navigation = [
@@ -19,7 +20,16 @@ const navigation_end = [
 ];
 
 export default function NaVBar() {
+  useEffect(() => {
+    // Disable scrolling
+    document.body.style.overflow = 'hidden';
+    return () => {
+      // Enable scrolling when the component unmounts
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
   return (
+    <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
     <Disclosure as="nav" className="bg-[#333333]">
       {({ open }) => (
         <>
@@ -105,5 +115,18 @@ export default function NaVBar() {
         </>
       )}
     </Disclosure>
+
+
+      <div className="absolute inset-0 flex items-center justify-center z-10">
+        <div className="backdrop-opacity-10 backdrop-invert bg-white/10 backdrop-blur-sm flex border-2 border-black text-white p-8 rounded-3xl">
+          <div className="text-4xl font-bold">
+            Opening Soon
+          </div>
+          <div className="flex items-baseline mt-4 pl-3">
+            <div className='loader'></div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
