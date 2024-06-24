@@ -3,6 +3,7 @@ import { LiaFacebookSquare } from "react-icons/lia";
 import { PiTiktokLogo } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
+
 export const Footer = () => {
   return (
     <footer className="bg-[#333333] text-white pt-16 pb-6 md:pt-24 md:pb-10">
