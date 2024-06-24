@@ -7,17 +7,35 @@ const navigation = [
   { name: "Menu", href: "/menu", current: false },
   { name: "Contact", href: "#content", current: false },
   { name: "Reserve", href: "#reserve", current: false },
+  {
+    name: "Gift cards",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON#/gift_cards",
+    current: false,
+  },
+  {
+    name: "Order online",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON",
+    current: false,
+  },
 ];
 
 const navigation_start = [
-  { name: "Gift cards", href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON#/gift_cards", current: false },
+  {
+    name: "Gift cards",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON#/gift_cards",
+    current: false,
+  },
   { name: "About", href: "#about", current: true },
   { name: "Menu", href: "/menu", current: false },
 ];
 const navigation_end = [
   { name: "Contact", href: "#content", current: false },
   { name: "Reserve", href: "#reserve", current: false },
-  { name: "Order online", href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON", current: false},
+  {
+    name: "Order online",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON",
+    current: false,
+  },
 ];
 
 export default function NaVBar() {
@@ -27,7 +45,7 @@ export default function NaVBar() {
         <>
           <div className=" px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-24 w-full items-center justify-around">
-              <div className="relative inset-y-0 left-0 flex justify-end sm:hidden">
+              <div className="relative inset-y-0 left-0 flex justify-end md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative flex w-full items-end justify-end rounded-md p-2 text-gray-400 hover:text-white">
                   <span className="relative" />
@@ -45,14 +63,14 @@ export default function NaVBar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex gap-x-14 sm:items-stretch sm:justify-start">
+              <div className="hidden md:block">
+                <div className="flex lg:gap-x-14 gap-x-5 sm:items-stretch sm:justify-start">
                   {navigation_start.map((item) =>
                     item.href[0] === "#" ? (
                       <a
                         key={item.name}
                         href={`/${item.href}`}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </a>
@@ -60,7 +78,7 @@ export default function NaVBar() {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </Link>
@@ -69,19 +87,24 @@ export default function NaVBar() {
                 </div>
               </div>
 
-              <div className="flex items-center text-white text-lg font-semibold justify-center sm:items-stretch">
-                <Link to="/"><img src="\Logo_mercury-white_png.png" alt="mercury" width={200} height={200}/>  </Link>
+              <div className="flex items-center justify-center flex-1">
+                <Link to="/" className="flex items-center">
+                  <img
+                    src="/Logo_mercury-white_png.png"
+                    alt="mercury"
+                    className="h-12 w-auto"
+                  />
+                </Link>
               </div>
 
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex flex-1 gap-x-16 sm:items-stretch sm:justify-end">
-                  <div className="flex gap-x-16">
+              <div className="hidden md:block">
+                <div className="flex lg:gap-x-14 gap-x-5 sm:items-stretch sm:justify-start">
                   {navigation_end.map((item) =>
                     item.href[0] === "#" ? (
                       <a
                         key={item.name}
                         href={`/${item.href}`}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </a>
@@ -89,13 +112,12 @@ export default function NaVBar() {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </Link>
                     )
                   )}
-                  </div>
                 </div>
               </div>
             </div>
