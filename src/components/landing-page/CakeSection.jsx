@@ -8,11 +8,11 @@ export const CakeSection = () => {
       </div>
       <div className="py-8 lg:py-16 px-2 w-full max-w-5xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-x-20">
         <img
-          src="/Cocktail.webp"
+          src="/M1.jpg"
           alt="cocktail"
           width={570}
           height={400}
-          className="object-cover w-full lg:w-1/2 lg:pb-0 pb-8"
+          className="object-cover w-full lg:w-1/2 lg:pb-0 h-[600px] pb-8"
         />
         <div className="flex flex-col justify-center items-center lg:w-1/2 lg:pt-0 pt-8 px-4">
           <h2 className="my-5 font-semibold text-2xl">meet Spicy Boy</h2>

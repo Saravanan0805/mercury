@@ -9,11 +9,11 @@ export const BannerContainer = () => {
       <div className="mt-[50px] relative w-full ">
         <div className=" relative left-[18%]">
           <img
-            src="/Banner1.webp"
+            src="/M3.jpg"
             alt="left_banner_image"
             width={540}
             height={360}
-            className="responsive-img"
+            className="responsive-img h-[360px] object-cover"
           />
         </div>
         <div className="absolute top-[17%] right-[26%] flex justify-center items-center">

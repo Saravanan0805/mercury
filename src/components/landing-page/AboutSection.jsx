@@ -17,14 +17,14 @@ export const AboutSection = () => {
       <div className="grid grid-cols-1  md:grid-cols-2 w-full max-w-screen-lg mx-auto gap-10">
         <div className="flex gap-5 px-1 md:justify-center">
           <img
-            src="/Chicago1.webp"
+            src="/M2.jpg"
             alt="about_img"
             width={232}
             height={320}
             className="object-cover"
           />
           <img
-            src="/Chicago2.webp"
+            src="/M4.jpg"
             alt="about_img"
             width={232}
             height={320}
