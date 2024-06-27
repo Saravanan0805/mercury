@@ -15,13 +15,12 @@ export const CakeSection = () => {
           className="object-cover w-full lg:w-1/2 lg:pb-0 h-[600px] pb-8"
         />
         <div className="flex flex-col justify-center items-center lg:w-1/2 lg:pt-0 pt-8 px-4">
-          <h2 className="my-5 font-semibold text-2xl">meet Spicy Boy</h2>
-          <p className="w-full lg:w-3/4">
-            Looking for a new non-alcoholic drink that's anything but boring?
-            Say hello to our Spicy Boy! With a unique blend of tarragon,
-            pomegranate, jalapeño, ginger, and lime, this drink packs a punch of
-            flavor that's sure to delight your taste buds, whether you're
-            looking for booze or not.
+          <h2 className="my-5 font-semibold text-2xl">meet Sangria</h2>
+          <p className="w-full lg:w-3/4 text-center">
+            In need of a liquid therapy..? A vibrant Spain tapestry woven from
+            the essence of fruits and soulful depths of wine. It tells the story
+            of our passion and love , promise of shared memories.. join the
+            eternal toast to the joy of living..
           </p>
           <a href="#reserve">
             <button className="py-3 px-8 bg-[#a76435] my-7 font-medium">
