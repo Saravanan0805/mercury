@@ -6,23 +6,19 @@ export const BannerContainer = () => {
       <div className="mt-5 mb-[10px]">
         <h1 className="font-semibold text-3xl">menu</h1>
       </div>
-      <div className="mt-[50px] relative w-full ">
-        <div className=" relative left-[18%]">
+      <div className="mt-[50px] relative w-full flex justify-center items-center">
+        <div className="relative flex-shrink-0 transform translate-x-[-10%]">
           <img
             src="/M3.jpg"
             alt="left_banner_image"
-            width={540}
-            height={360}
-            className="responsive-img h-[360px] object-cover"
+            className="lg:h-[360px] md:h-[250px] h-[120px] md:w-auto w-[200px] object-cover"
           />
         </div>
-        <div className="absolute top-[17%] right-[26%] flex justify-center items-center">
+        <div className="absolute top-[50%] transform translate-x-[90%]  translate-y-[-50%] flex-shrink-0">
           <img
-            src="/Banner2.webp"
+            src="/menuImage.jpg"
             alt="right_banner_image"
-            width={360}
-            height={240}
-            className="responsive-img"
+            className="lg:h-[240px] md:h-[150px] h-[70px] w-auto object-cover"
           />
         </div>
       </div>

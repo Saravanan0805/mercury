@@ -92,7 +92,7 @@ export default function NaVBar() {
                   <img
                     src="/Logo_mercury-white_png.png"
                     alt="mercury"
-                    className="h-12 w-auto"
+                    className="h-20 w-auto"
                   />
                 </Link>
               </div>

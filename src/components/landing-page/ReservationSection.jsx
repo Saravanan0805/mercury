@@ -27,7 +27,7 @@ export const ReservationSection = () => {
   };
 
   return (
-    <div id="reserve" className="bg-[url(/public/Actionbg.jpg)] h-[500px] bg-cover flex justify-center items-center">
+    <div id="reserve" className="bg-[url(/public/ReservationImage.jpg)] h-[500px] bg-cover flex justify-center items-center">
       <div className="text-white flex justify-center items-center h-full flex-col">
         <div className="mb-10">
           <h1 className="mt-5 mb-[10px] font-medium text-3xl">Make a reservation</h1>
