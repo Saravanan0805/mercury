@@ -4,7 +4,7 @@ export const BannerContainer = () => {
   return (
     <div className="h[550px] bg-[#333333] text-white py-20 flex justify-center flex-col items-center mb-28">
       <div className="mt-5 mb-[10px]">
-        <h1 className="font-semibold text-3xl">menu</h1>
+        <h1 className="font-semibold text-3xl">Menu</h1>
       </div>
       <div className="mt-[50px] relative w-full flex justify-center items-center">
         <div className="relative flex-shrink-0 transform translate-x-[-10%]">

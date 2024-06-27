@@ -193,7 +193,7 @@ export const beerContent = [
     page: 8.75,
   },
   {
-    name: "Mackinnon brother;s 8 man epa",
+    name: "Mackinnon brother's 8 man epa",
     message: "",
     page: 8.75,
   },
@@ -424,7 +424,7 @@ export const fishContent = [
     page: 16,
   },
   {
-    name: "Ricotta Rendezvous",
+    name: "Ricotta rendezvous",
     message:
       "Whipped ricotta cheese . Sourdough . Herbed mixed cherry tomatoes . Bell pepper pesto",
     page: 17,
@@ -468,7 +468,7 @@ export const goatContent = [
     page: 20,
   },
   {
-    name: "Falafel Wrap",
+    name: "Falafel wrap",
     message:
       "Smashed falafel . Hummus . Pickled onion . Mint aioli . Side of house fries or salad",
     page: 16,
@@ -482,7 +482,7 @@ export const meatContent = [
     page: 34,
   },
   {
-    name: "Fish n Chips",
+    name: "Fish n chips",
     message: "Seared haddock . Musky peas . Tartar sauce and crisp chips",
     page: 19,
   },
@@ -504,7 +504,7 @@ export const meatContent = [
     page: 34,
   },
   {
-    name: "Rustic Lamb Shank",
+    name: "Rustic lamb shank",
     message:
       "Slow-cooked lamb shank on a bed of mashed potatoes . Seasonal vegetables and jus",
     page: 35,

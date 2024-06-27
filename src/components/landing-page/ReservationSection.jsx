@@ -27,21 +27,51 @@ export const ReservationSection = () => {
   };
 
   return (
-    <div id="reserve" className="bg-[url(/public/ReservationImage.jpg)] h-[500px] bg-cover flex justify-center items-center">
+    <div
+      id="reserve"
+      className="bg-[url(/public/ReservationImage.jpg)] h-[500px] bg-cover flex justify-center items-center"
+    >
       <div className="text-white flex justify-center items-center h-full flex-col">
         <div className="mb-10">
-          <h1 className="mt-5 mb-[10px] font-medium text-3xl">Make a reservation</h1>
+          <h1 className="mt-5 mb-[10px] font-medium text-3xl">
+            Make a Reservation
+          </h1>
         </div>
         <div className="p-4">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5 border border-white rounded-sm w-[300px]">
-            <input type="date" id="datepicker" name="datepicker" value={date} onChange={(e)=>setDate(e.target.value) } className="h-12 underline text-black px-1 w-full" />
-            <input type="time" id="timepicker" name="timepicker"  value={time} onChange={(e)=> setTime(e.target.value)} className="h-12 underline text-black px-1 w-full" />
-            <select id="dropdown" name="dropdown" value={option} onChange={(e=>setOption(e.target.value))} className="h-12 text-black underline">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-5 border border-white rounded-sm w-[300px]"
+          >
+            <input
+              type="date"
+              id="datepicker"
+              name="datepicker"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+              className="h-12 underline text-black px-1 w-full"
+            />
+            <input
+              type="time"
+              id="timepicker"
+              name="timepicker"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+              className="h-12 underline text-black px-1 w-full"
+            />
+            <select
+              id="dropdown"
+              name="dropdown"
+              value={option}
+              onChange={(e) => setOption(e.target.value)}
+              className="h-12 text-black underline"
+            >
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
             </select>
-            <button type="submit" className="bg-black h-12">Find a table</button>
+            <button type="submit" className="bg-black h-12">
+              Find a table
+            </button>
           </form>
         </div>
       </div>
