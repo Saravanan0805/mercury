@@ -12,6 +12,9 @@ import {
   spiritContent,
   veggiesContent,
   winesContent,
+  coffeContent,
+  smoothies,
+  mocktails,
 } from "./MenuContent";
 
 export const CategoryMenuSection = ({ title }) => {
@@ -20,9 +23,16 @@ export const CategoryMenuSection = ({ title }) => {
       <h1 className="p-[30px] font-semibold">{title}</h1>
       {title === "Drinks" ? (
         <>
+          <CategoryContent title="COFFEE & MORE" content={coffeContent} />
           <CategoryContent title="COCKTAILS" content={cocktail} />
-          <CategoryContent title="BEER" content={beerContent} />
-          <CategoryContent title="CIDER" content={ciderContent} />
+          <CategoryContent
+            title="BEER ON TAP (18 Oz Glass)"
+            content={beerContent}
+          />
+          <CategoryContent title="BOTTLES" content={ciderContent} />
+          <CategoryContent title="SHAKES" content={spiritContent} />
+          <CategoryContent title="SMOOTHIES" content={smoothies} />
+          <CategoryContent title="MOCKTAILS" content={mocktails} />
           <div>
             <h1 className="flex justify-center font-semibold text-xl py-5">
               WINES BY THE GLASS
@@ -34,14 +44,17 @@ export const CategoryMenuSection = ({ title }) => {
                     <div className="font-semibold text-sm">
                       <label>{c?.name}</label>
                     </div>
-                    <p className="mt-10 text-xs">{c?.message}</p>
                     <div className="text-xs pt-5 font-semibold">
                       <div className="flex justify-between">
-                        <label>glass</label>
+                        <label>6 OZ</label>
+                        <label>{c?.oz}</label>
+                      </div>
+                      <div className="flex justify-between">
+                        <label>500 ML</label>
                         <label>{c?.glass}</label>
                       </div>
                       <div className="flex justify-between">
-                        <label>bottle</label>
+                        <label>750 ML</label>
                         <label>{c?.bottle}</label>
                       </div>
                     </div>
@@ -50,16 +63,15 @@ export const CategoryMenuSection = ({ title }) => {
               ))}
             </div>
           </div>
-          <CategoryContent title="SPIRIT FREE" content={spiritContent} />
         </>
       ) : (
         <>
           <CategoryContent title="Green Galore" content={breadContent} />
-          <CategoryContent title="Soul-Warming" content={veggiesContent} />
+          {/* <CategoryContent title="Soul-Warming" content={veggiesContent} /> */}
           <CategoryContent title="Social Plate" content={fishContent} />
-          <CategoryContent title="Handheld Delights" content={meatContent} />
-          <CategoryContent title="Main Attraction" content={goatContent} />
-          <CategoryContent title="Tempting Treats" content={dessertContent} />
+          <CategoryContent title="Main Attraction" content={meatContent} />
+          <CategoryContent title="Handheld Delights" content={goatContent} />
+          <CategoryContent title="Sweet Endings" content={dessertContent} />
         </>
       )}
       {/* <div className="mb-16">

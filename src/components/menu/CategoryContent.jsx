@@ -10,7 +10,7 @@ export function CategoryContent({ title, content }) {
             <div className="border-b pb-5">
               <div className="flex justify-between font-semibold text-sm">
                 <label>{c?.name}</label>
-                <label>{`$ ${c?.page}`}</label>
+                <label>{`${c?.page}`}</label>
               </div>
               <p className="mt-10 text-xs">{c?.message}</p>
             </div>
