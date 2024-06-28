@@ -17,8 +17,9 @@ export const ContectSection = () => {
       <div className="flex flex-col sm:flex-row justify-evenly items-center flex-wrap max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center mb-6 sm:mb-0">
           <h1 className="font-semibold text-lg sm:text-2xl mb-0">Address</h1>
-          <label className="my-3">125 Brock St,</label>
-          <label className="my-3">Kingston</label>
+          <label className="my-1">125 Brock St,</label>
+          <label className="my-1">Kingston</label>
+          <label className="my-1">K7L 1S1</label>
           {/* <button className="py-2 px-6 bg-[#a76435] my-3 font-medium">
             Directions
           </button> */}
@@ -36,6 +37,7 @@ export const ContectSection = () => {
           <h1 className="font-semibold text-lg sm:text-2xl mb-1">Contact</h1>
           {/* <label className="underline my-3">312-492-6262 </label> */}
           <label className="underline my-3">info@themercury.ca</label>
+          <label className="underline my-3">ph - 613 766 7225</label>
         </div>
       </div>
     </div>
