@@ -33,7 +33,7 @@ export const ReservationSection = () => {
     >
       <div className="text-white flex justify-center items-center h-full flex-col">
         <div className="mb-10">
-          <h1 className="mt-5 mb-[10px] font-medium text-3xl">
+          <h1 className="mt-5 mb-[10px] font-medium text-3xl" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
             Make a Reservation
           </h1>
         </div>

@@ -7,15 +7,15 @@ const HeroCarousel = () => {
 
   return (
     <Slide duration={3000} autoplay={true} arrows={false}>
-      {images.map((image, index) => (
-        <div className="each-slide-effect" key={index}>
-          <div
-            className="slide-image"
-            style={{ backgroundImage: `url(${image})` }}
-          ></div>
-        </div>
-      ))}
-    </Slide>
+    {images.map((image, index) => (
+      <div className="each-slide-effect" key={index}>
+        <div
+          className="slide-image bg-top sm:bg-center md:bg-top lg:bg-top object-contain"
+          style={{ backgroundImage: `url(${image})` }}
+        ></div>
+      </div>
+    ))}
+  </Slide>
   );
 };
 
