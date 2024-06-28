@@ -10,7 +10,7 @@ import {
   goatContent,
   meatContent,
   spiritContent,
-  veggiesContent,
+  //   veggiesContent,
   winesContent,
   coffeContent,
   smoothies,
@@ -23,7 +23,6 @@ export const CategoryMenuSection = ({ title }) => {
       <h1 className="p-[30px] font-semibold">{title}</h1>
       {title === "Drinks" ? (
         <>
-          <CategoryContent title="COFFEE & MORE" content={coffeContent} />
           <CategoryContent title="COCKTAILS" content={cocktail} />
           <CategoryContent
             title="BEER ON TAP (18 Oz Glass)"
@@ -63,6 +62,7 @@ export const CategoryMenuSection = ({ title }) => {
               ))}
             </div>
           </div>
+          <CategoryContent title="COFFEE & MORE" content={coffeContent} />
         </>
       ) : (
         <>
