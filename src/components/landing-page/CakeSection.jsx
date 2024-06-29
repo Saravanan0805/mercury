@@ -22,9 +22,9 @@ export const CakeSection = () => {
             of our passion and love , promise of shared memories.. join the
             eternal toast to the joy of living..
           </p>
-          <a href="#reserve">
+          <a href="#content">
             <button className="py-3 px-8 bg-[#a76435] my-7 font-medium">
-              reserve
+              Reserve
             </button>
           </a>
         </div>

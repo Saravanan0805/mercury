@@ -66,7 +66,7 @@ export const CategoryMenuSection = ({ title }) => {
         </>
       ) : (
         <>
-          <CategoryContent title="Green Galore" content={breadContent} />
+          <CategoryContent title="Greens Galore" content={breadContent} />
           {/* <CategoryContent title="Soul-Warming" content={veggiesContent} /> */}
           <CategoryContent title="Social Plate" content={fishContent} />
           <CategoryContent title="Main Attraction" content={meatContent} />
