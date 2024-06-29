@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const navigation = [
@@ -39,8 +40,25 @@ const navigation_end = [
 ];
 
 export default function NaVBar() {
+  
+  useEffect(() => {
+    const handleHashChange = () => {
+      const yOffset = -90; // Adjust this value based on your navbar height
+      const element = document.getElementById(window.location.hash.substring(1));
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
   return (
-    <Disclosure as="nav" className="bg-[#333333]">
+    <Disclosure as="nav" className="bg-[#333333]  fixed top-0 left-0 right-0 z-50">
       {({ open }) => (
         <>
           <div className=" px-2 sm:px-6 lg:px-8">
