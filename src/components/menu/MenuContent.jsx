@@ -364,13 +364,13 @@ export const winesContent = [
 
 export const breadContent = [
   {
-    name: "Tender mix green",
+    name: "Tender mix green, GF, Veg",
     message:
       "Ontario-grown spring mix , Shaved carrots , Cucumber , Bell peppers , Balsamic dressing , (small - 10)",
     page: 15,
   },
   {
-    name: "Signature house salad",
+    name: "Signature house salad, Veg",
     message:
       "Quinoa , Shredded kale , Shaved brussels sprouts , Cranberry , Citrus dressing",
     page: 18,
@@ -414,7 +414,7 @@ export const fishContent = [
     page: 29,
   },
   {
-    name: "Avocado infused hummus",
+    name: "Avocado infused hummus, Veg",
     message: "Pistachio dukkah , Pomegranate , Pita bread",
     page: 16,
   },
@@ -424,7 +424,7 @@ export const fishContent = [
     page: 16,
   },
   {
-    name: "Ricotta rendezvous",
+    name: "Ricotta rendezvous, Veg",
     message:
       "Whipped ricotta cheese , Sourdough , Herbed mixed cherry tomatoes , Bell pepper pesto",
     page: 17,
@@ -442,7 +442,7 @@ export const fishContent = [
     page: 18,
   },
   {
-    name: "Coco-licious shrimp",
+    name: "Coco-licious shrimp, GF",
     message: "House sauce , Grated coconut , Curry leaves",
     page: 25,
   },
@@ -468,7 +468,7 @@ export const goatContent = [
     page: 20,
   },
   {
-    name: "Falafel wrap",
+    name: "Falafel wrap, Veg",
     message:
       "Smashed falafel , Hummus , Pickled onion , Mint aioli , Side of house fries or salad",
     page: 16,
@@ -495,11 +495,11 @@ export const meatContent = [
   {
     name: "Flame - kissed Striploin",
     message:
-      "Fire grilled AAA 8oz stripolin , Seasonal vegetable , Demi glaze , Add shrims - $8 , Choice of mashed potatoes/fries/caesar salad",
+      "Fire grilled AAA 8oz Striploin , Seasonal vegetable , Demi glaze , Add shrims - $8 , Choice of mashed potatoes/fries/caesar salad",
     page: 40,
   },
   {
-    name: "Seared salmon",
+    name: "Seared salmon, GF",
     message: "Thai bean ragu , seasonal vegetable",
     page: 34,
   },
@@ -510,12 +510,12 @@ export const meatContent = [
     page: 35,
   },
   {
-    name: "Korean bbq short ribs",
+    name: "Korean bbq short ribs, GF",
     message: "Marinated beef short ribs , Rice , Kimchi , Sauteed vegetables",
     page: 29,
   },
   {
-    name: "Moroccan harvest stew",
+    name: "Moroccan harvest stew, GF, Veg",
     message: "Moroccan spiced vegetable stew , Coconut cream , basmati rice",
     page: 19,
   },
@@ -525,20 +525,20 @@ export const meatContent = [
     page: 28,
   },
   {
-    name: "Pasta primavera",
-    message: "Penne , Seasonal vegetable , Rose sauce",
+    name: "Pasta primavera, Veg",
+    message: "Penne , Seasonal vegetable , Ros\u00E9 sauce",
     page: 20,
   },
 ];
 
 export const dessertContent = [
   {
-    name: "Chocolate decadence",
+    name: "Chocolate decadence, GF",
     message: "Coconut cream , Chocolate glaze",
     page: 11,
   },
   {
-    name: "Caramel affogato",
+    name: "Caramel affogato, GF",
     message: "Vanilla ice cream , Espresso",
     page: 13,
   },
