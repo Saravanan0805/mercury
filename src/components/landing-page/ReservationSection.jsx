@@ -78,7 +78,7 @@ export const ReservationSection = () => {
               className="py-4 px-14 bg-[#a76435] hover:bg-[#a76435]/90 my-3 font-medium shadow-lg"
               // style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)" }}
             >
-              find a table
+              Find a Table
             </button>
           </a>
 
