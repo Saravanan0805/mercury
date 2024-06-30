@@ -14,7 +14,7 @@ const hours = [
 
 const sections = [
   {
-    title: "address",
+    title: "Address",
     content: (
       <div className="flex flex-col">
         <label className="my-1 text-center">125 Brock St,</label>
@@ -27,7 +27,7 @@ const sections = [
     ),
   },
   {
-    title: "hours",
+    title: "Hours",
     content: (
       <>
         {hours.map((item, index) => (
@@ -40,7 +40,7 @@ const sections = [
     ),
   },
   {
-    title: "contact",
+    title: "Contact",
     content: (
       <div className="flex flex-col">
         <a
