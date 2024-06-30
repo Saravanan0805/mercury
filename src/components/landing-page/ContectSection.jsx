@@ -21,8 +21,8 @@ const sections = [
         <label className="my-1 text-center">Kingston</label>
         <label className="my-1 text-center">K7L 1S1</label>
         <button className="py-2 px-6 bg-[#a76435] my-3 font-medium hover:bg-[#a76435]/80">
-            directions
-          </button>
+          Directions
+        </button>
       </div>
     ),
   },
@@ -43,12 +43,20 @@ const sections = [
     title: "contact",
     content: (
       <div className="flex flex-col">
-        <a href="mailto:info@themercury.ca" target="_blank" className="underline mt-3 flex gap-x-3 items-center">
-        <MdEmail />
+        <a
+          href="mailto:info@themercury.ca"
+          target="_blank"
+          className="underline mt-3 flex gap-x-3 items-center"
+        >
+          <MdEmail />
           info@themercury.ca
         </a>
-        <a href="tel:6137667225" target="_blank" className="underline mt-2 flex gap-x-3 items-center">
-        <FaPhoneAlt />
+        <a
+          href="tel:6137667225"
+          target="_blank"
+          className="underline mt-2 flex gap-x-3 items-center"
+        >
+          <FaPhoneAlt />
           613 766 7225
         </a>
       </div>
@@ -73,13 +81,14 @@ export const ContectSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-around items-center gap-x-6 sm:items-start">
           {sections.map((section, index) => (
-            <div key={index} className="flex flex-col items-center text-center mb-6 sm:mb-0">
+            <div
+              key={index}
+              className="flex flex-col items-center text-center mb-6 sm:mb-0"
+            >
               <h1 className="font-semibold text-lg sm:text-2xl mb-4 text-center">
                 {section.title}
               </h1>
-              <div className="w-full">
-                {section.content}
-              </div>
+              <div className="w-full">{section.content}</div>
             </div>
           ))}
         </div>
