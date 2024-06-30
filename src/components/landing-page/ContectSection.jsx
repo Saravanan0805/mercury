@@ -71,7 +71,7 @@ export const ContectSection = () => {
   return (
     <div className="bg-[#333333] py-10 sm:py-20 text-white" id="content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row justify-around items-start">
+        <div className="flex flex-col sm:flex-row justify-around items-center gap-x-6 sm:items-start">
           {sections.map((section, index) => (
             <div key={index} className="flex flex-col items-center text-center mb-6 sm:mb-0">
               <h1 className="font-semibold text-lg sm:text-2xl mb-4 text-center">
