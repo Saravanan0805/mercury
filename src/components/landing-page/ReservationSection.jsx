@@ -29,20 +29,23 @@ export const ReservationSection = () => {
   return (
     <div
       id="reserve"
-      className="bg-[url(/public/ReservationImage.jpg)] h-[500px] bg-cover bg-center flex justify-center items-center"
+      className="bg-[url(/public/ReservationImage.jpg)] h-[500px] bg-black bg-cover bg-center flex justify-center items-center"
     >
       <div className="text-white flex justify-center items-center h-full flex-col">
         <div className="mb-10">
-          <h1 className="mt-5 mb-[10px] font-medium text-3xl" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.9)' }}>
+          <h1
+            className="mt-5 mb-[10px] font-medium text-3xl"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)" }}
+          >
             Make a Reservation
           </h1>
         </div>
         <div className="p-4">
-          <form
+          {/* <form
             onSubmit={handleSubmit}
             className="flex flex-col gap-5 border border-white rounded-sm w-[300px]"
-          >
-            <input
+          > */}
+          {/* <input
               type="date"
               id="datepicker"
               name="datepicker"
@@ -68,11 +71,18 @@ export const ReservationSection = () => {
               <option value="option1">Option 1</option>
               <option value="option2">Option 2</option>
               <option value="option3">Option 3</option>
-            </select>
-            <button type="submit" className="bg-black h-12">
-              Find a table
+            </select> */}
+          <a href="mailto:info@themercury.ca" target="_blank">
+            <button
+              type="submit"
+              className="py-4 px-14 bg-[#a76435] hover:bg-[#a76435]/90 my-3 font-medium shadow-lg"
+              // style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9)" }}
+            >
+              find a table
             </button>
-          </form>
+          </a>
+
+          {/* </form> */}
         </div>
       </div>
     </div>
