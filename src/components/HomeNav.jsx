@@ -105,7 +105,7 @@ export default function NaVBar() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center flex-1">
+              <div className="flex items-center md:justify-center justify-end flex-1">
                 <Link to="/" className="flex items-center">
                   <img
                     src="/Logo_mercury-white_png.png"
