@@ -41,7 +41,7 @@ export const CategoryMenuSection = ({ title }) => {
                 <div key={index} className="w-1/2 pr-10 mb-[30px]">
                   <div className="border-b pb-5">
                     <div className="font-semibold text-sm">
-                      <label>{c?.name}</label>
+                      <label className="uppercase">{c?.name}</label>
                     </div>
                     <div className="text-xs pt-5 font-semibold">
                       <div className="flex justify-between">
