@@ -36,9 +36,9 @@ export const CategoryMenuSection = ({ title }) => {
             <h1 className="flex justify-center font-semibold text-xl py-5">
               WINES BY THE GLASS
             </h1>
-            <div className="p-[30px] flex flex-wrap">
+            <div className="md:p-[30px] p-0 flex flex-wrap">
               {winesContent?.map((c, index) => (
-                <div key={index} className="w-1/2 pr-10 mb-[30px]">
+                <div key={index} className="w-full md:w-1/2 sm:w-3/4 md:pr-10 p-0 mb-[30px]">
                   <div className="border-b pb-5">
                     <div className="font-semibold text-sm">
                       <label className="uppercase">{c?.name}</label>
