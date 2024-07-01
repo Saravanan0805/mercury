@@ -13,8 +13,7 @@ const hours = [
 ];
 
 const handleClick = () => {
-  // setMessage('Button clicked!');
-  window.location.href = "https://maps.app.goo.gl/RXxedHeyZLeTBcVA6";
+  window.open("https://maps.app.goo.gl/RXxedHeyZLeTBcVA6", "_blank");
 };
 
 const sections = [

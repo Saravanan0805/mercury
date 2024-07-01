@@ -22,17 +22,17 @@ export const cocktail = [
     name: "Espresso martini",
     message:
       "Simple & traditional drink made by muddling sugar with bitter and Bourbon whisky",
-    page: 10.9,
+    page: 10.99,
   },
   {
     name: "Peach bellini",
     message: "Fancy italian wine cocktail with prosecco & peach puree'",
-    page: 10.9,
+    page: 10.99,
   },
   {
     name: "Straw-man pina coloda",
     message: "Hawaiian pina colada with strawberry rum and Mango puree'",
-    page: 10.9,
+    page: 10.99,
   },
   {
     name: "Cosmopolitan",
@@ -68,12 +68,12 @@ export const cocktail = [
     name: "Red sangria",
     message:
       "A spanish drink made of red wine, orange or lemon juice , soda and cherry brandy",
-    page: 10.9,
+    page: 10.99,
   },
   {
     name: "White sangria",
     message: "Crisp white wine, fresh fruit and sherry",
-    page: 10.9,
+    page: 10.99,
   },
 ];
 
@@ -99,9 +99,14 @@ export const coffeContent = [
     page: 4.95,
   },
   {
+    name: "Cafe Latte",
+    message: "",
+    page: 5.75,
+  },
+  {
     name: "Mocha",
     message: "",
-    page: 5.94,
+    page: 5.95,
   },
   {
     name: "Macchiato",
@@ -149,7 +154,7 @@ export const beerContent = [
   {
     name: "Stella artois euro lager",
     message: "",
-    page: 10.9,
+    page: 10.99,
   },
   {
     name: "Mill st organic lager",
@@ -179,7 +184,7 @@ export const beerContent = [
   {
     name: "James ready lager",
     message: "",
-    page: 8.75,
+    page: 6.99,
   },
   {
     name: "Twisted tea",
@@ -212,7 +217,7 @@ export const ciderContent = [
   {
     name: "Alexander keith's session ale (341 ml)",
     message: "",
-    page: 7.75,
+    page: 6.75,
   },
   {
     name: "Budweiser lager (330 ml)",

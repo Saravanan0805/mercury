@@ -34,11 +34,14 @@ export const CategoryMenuSection = ({ title }) => {
           <CategoryContent title="MOCKTAILS" content={mocktails} />
           <div>
             <h1 className="flex justify-center font-semibold text-xl py-5">
-              WINES BY THE GLASS
+              WINE
             </h1>
             <div className="md:p-[30px] p-0 flex flex-wrap">
               {winesContent?.map((c, index) => (
-                <div key={index} className="w-full md:w-1/2 sm:w-[85%] md:pr-10 p-0 mb-[30px]">
+                <div
+                  key={index}
+                  className="w-full md:w-1/2 sm:w-[85%] md:pr-10 p-0 mb-[30px]"
+                >
                   <div className="border-b pb-5">
                     <div className="font-semibold text-sm">
                       <label className="uppercase">{c?.name}</label>
