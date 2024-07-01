@@ -12,6 +12,11 @@ const hours = [
   { name: "Sunday", hour: "11 AM – 11 PM" },
 ];
 
+const handleClick = () => {
+  // setMessage('Button clicked!');
+  window.location.href = "https://maps.app.goo.gl/RXxedHeyZLeTBcVA6";
+};
+
 const sections = [
   {
     title: "Address",
@@ -20,7 +25,10 @@ const sections = [
         <label className="my-1 text-center">125 Brock St,</label>
         <label className="my-1 text-center">Kingston</label>
         <label className="my-1 text-center">K7L 1S1</label>
-        <button className="py-2 px-6 bg-[#a76435] my-3 font-medium hover:bg-[#a76435]/80">
+        <button
+          className="py-2 px-6 bg-[#a76435] my-3 font-medium hover:bg-[#a76435]/80"
+          onClick={handleClick}
+        >
           Directions
         </button>
       </div>
