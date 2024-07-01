@@ -3,8 +3,7 @@
 export const cocktail = [
   {
     name: "Caesar",
-    message:
-      "It typically contains , Vodka , Clamato , Hot sauce and worcestershire sauce",
+    message: "It contains Vodka , Clamato , Hot sauce and worcestershire sauce",
     page: 9.99,
   },
   {
@@ -14,7 +13,7 @@ export const cocktail = [
     page: 9.99,
   },
   {
-    name: "Old fashion",
+    name: "Old fashioned",
     message:
       "Simple & traditional drink made by muddling sugar with bitter and Bourbon whisky",
     page: 9.99,
@@ -168,12 +167,12 @@ export const beerContent = [
     page: 8.75,
   },
   {
-    name: "Moose head lager",
+    name: "Moosehead lager",
     message: "",
     page: 8.75,
   },
   {
-    name: "Moose head small batch east coast ipa",
+    name: "Moosehead small batch east coast ipa",
     message: "",
     page: 8.75,
   },
@@ -240,7 +239,7 @@ export const spiritContent = [
     page: 7.45,
   },
   {
-    name: "Creme mangue",
+    name: "Cr\u00E9m\u00E9 mangue",
     message: "Vanilla ice-cream shaked with mango pure and mango chunks",
     page: 7.45,
   },
