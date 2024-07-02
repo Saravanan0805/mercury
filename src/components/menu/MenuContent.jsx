@@ -141,7 +141,7 @@ export const coffeContent = [
   {
     name: "Pops",
     message: "",
-    page: 3.5,
+    page: 3.50,
   },
 ];
 
