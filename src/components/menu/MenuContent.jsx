@@ -9,7 +9,7 @@ export const cocktail = [
   {
     name: "Margarita",
     message:
-      "Most popular tequila-based cocktail with triple see and lime juice",
+      "Most popular tequila-based cocktail with triple sec and lime juice",
     page: 9.99,
   },
   {
@@ -21,7 +21,7 @@ export const cocktail = [
   {
     name: "Espresso martini",
     message:
-      "Simple & traditional drink made by muddling sugar with bitter and Bourbon whisky",
+      "Best known mixed alcoholic drink with Vodka, Kahlua and Eespresso",
     page: 10.99,
   },
   {
@@ -141,13 +141,13 @@ export const coffeContent = [
   {
     name: "Pops",
     message: "",
-    page: 3.50,
+    page: 3.5,
   },
 ];
 
 export const beerContent = [
   {
-    name: "Bug light lager",
+    name: "Bud light lager",
     message: "",
     page: 8.75,
   },
