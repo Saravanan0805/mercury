@@ -6,11 +6,14 @@ export function CategoryContent({ title, content }) {
       </h1>
       <div className="md:p-[30px] p-0 flex flex-wrap">
         {content?.map((c, index) => (
-          <div key={index} className="w-full md:w-1/2 sm:w-[85%] sm:pr-7 p-0 mb-[30px]">
+          <div
+            key={index}
+            className="w-full md:w-1/2 sm:w-[85%] sm:pr-7 p-0 mb-[30px]"
+          >
             <div className="border-b pb-5">
               <div className="flex justify-between font-semibold text-sm">
                 <label className="uppercase">{c?.name}</label>
-                <label>{`${c?.page}`}</label>
+                <label>{`${c?.page.toFixed(2)}`}</label>
               </div>
               <p className="mt-10 text-xs">{c?.message}</p>
             </div>
