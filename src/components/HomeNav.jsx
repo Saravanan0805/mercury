@@ -4,38 +4,66 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "about", href: "#about", current: true },
-  { name: "menu", href: "/menu", current: false },
-  { name: "contact", href: "#content", current: false },
-  { name: "reserve", href: "#reserve", current: false },
+  { name: "About", href: "#about", current: true },
+  { name: "Menu", href: "/menu", current: false },
+  { name: "Contact", href: "#content", current: false },
+  { name: "Reserve", href: "#reserve", current: false },
+  {
+    name: "Gift cards",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON#/gift_cards",
+    current: false,
+  },
+  {
+    name: "Order online",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON",
+    current: false,
+  },
 ];
 
 const navigation_start = [
-  { name: "about", href: "#about", current: true },
-  { name: "menu", href: "/menu", current: false },
+  {
+    name: "Gift cards",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON#/gift_cards",
+    current: false,
+  },
+  { name: "About", href: "#about", current: true },
+  { name: "Menu", href: "/menu", current: false },
 ];
 const navigation_end = [
-  { name: "contact", href: "#content", current: false },
-  { name: "reserve", href: "#reserve", current: false },
+  { name: "Contact", href: "#content", current: false },
+  { name: "Reserve", href: "#reserve", current: false },
+  {
+    name: "Order online",
+    href: "https://www.talech.com/biz/ordering/143524/MERCURY-BAR-LOUNGE-KINGSTON-ON",
+    current: false,
+  },
 ];
 
 export default function NaVBar() {
+  
   useEffect(() => {
-    // Disable scrolling
-    document.body.style.overflow = 'hidden';
+    const handleHashChange = () => {
+      const yOffset = -90; // Adjust this value based on your navbar height
+      const element = document.getElementById(window.location.hash.substring(1));
+      if (element) {
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
     return () => {
-      // Enable scrolling when the component unmounts
-      document.body.style.overflow = 'auto';
+      window.removeEventListener("hashchange", handleHashChange);
     };
   }, []);
   return (
-    <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-    <Disclosure as="nav" className="bg-[#333333]">
+    <Disclosure as="nav" className="bg-[#333333]  fixed top-0 left-0 right-0 z-50">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-20 items-center justify-between">
-              <div className="relative inset-y-0 left-0 flex justify-end sm:hidden">
+          <div className=" px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-24 w-full items-center justify-around">
+              <div className="relative inset-y-0 left-0 flex justify-end md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative flex w-full items-end justify-end rounded-md p-2 text-gray-400 hover:text-white">
                   <span className="relative" />
@@ -53,14 +81,14 @@ export default function NaVBar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4 items-center justify-evenly sm:items-stretch sm:justify-start lg:w-1/2">
+              <div className="hidden md:block">
+                <div className="flex lg:gap-x-14 gap-x-5 sm:items-stretch sm:justify-start">
                   {navigation_start.map((item) =>
                     item.href[0] === "#" ? (
                       <a
                         key={item.name}
                         href={`/${item.href}`}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-sm font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </a>
@@ -68,7 +96,7 @@ export default function NaVBar() {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-sm font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </Link>
@@ -77,23 +105,37 @@ export default function NaVBar() {
                 </div>
               </div>
 
-              <div className="flex items-center text-white text-lg font-semibold justify-center sm:items-stretch">
-                <Link to="/"><img src="\Logo_mercury-white_png.png" alt="mercury" width={200} height={200}/>  </Link>
+              <div className="flex items-center md:justify-center justify-end flex-1">
+                <Link to="/" className="flex items-center">
+                  <img
+                    src="/Logo_mercury-white_png.png"
+                    alt="mercury"
+                    className="h-20 w-auto"
+                  />
+                </Link>
               </div>
 
-              <div className="hidden sm:ml-6 sm:block">
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
-                  <div className="flex space-x-4">
-                    {navigation_end.map((item) => (
+              <div className="hidden md:block">
+                <div className="flex lg:gap-x-14 gap-x-5 sm:items-stretch sm:justify-start">
+                  {navigation_end.map((item) =>
+                    item.href[0] === "#" ? (
                       <a
                         key={item.name}
                         href={`/${item.href}`}
-                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-sm font-medium  text-white"
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
                       >
                         {item.name}
                       </a>
-                    ))}
-                  </div>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="hover:underline hover:decoration-solid hover:decoration-[1.5px] rounded-md px-3 py-2 text-base font-medium text-white whitespace-nowrap"
+                      >
+                        {item.name}
+                      </Link>
+                    )
+                  )}
                 </div>
               </div>
             </div>
@@ -115,18 +157,5 @@ export default function NaVBar() {
         </>
       )}
     </Disclosure>
-
-
-      <div className="absolute inset-0 flex items-center justify-center z-10">
-        <div className="backdrop-opacity-10 backdrop-invert bg-white/10 backdrop-blur-sm flex border-2 border-black text-white p-8 rounded-3xl">
-          <div className="text-4xl font-bold">
-            Opening Soon
-          </div>
-          <div className="flex items-baseline mt-4 pl-3">
-            <div className='loader'></div>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }

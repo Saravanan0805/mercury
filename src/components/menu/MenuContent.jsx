@@ -2,168 +2,365 @@
 
 export const cocktail = [
   {
-    name: "goat fashioned",
-    message:
-      "goat fat-washed Evan Williams Bourbon . demerara . Angostura . fennel bitters",
-    page: 17,
+    name: "Caesar",
+    message: "It contains Vodka , Clamato , Hot sauce and worcestershire sauce",
+    page: 9.99,
   },
   {
-    name: "peach tea-quila",
+    name: "Margarita",
     message:
-      "Espolon Resposado . Cocchi Americano . genepy . Peach Rooibos Tea",
-    page: 17,
+      "Most popular tequila-based cocktail with triple sec and lime juice",
+    page: 9.99,
   },
   {
-    name: "bring the beet back",
+    name: "Old fashioned",
     message:
-      "El Guel Mezcal . Amaro Sfumato Rabarbaro. beet juice . ginger . lime",
-    page: 17,
+      "Simple & traditional drink made by muddling sugar with bitter and Bourbon whisky",
+    page: 9.99,
   },
   {
-    name: "green street manhattan",
+    name: "Espresso martini",
     message:
-      "Buffalo Trace Bourbon . Old Overholt Rye . Averna . vermouth . cherry bark vanilla bitters . cola syrup",
-    page: 22,
+      "Best known mixed alcoholic drink with Vodka, Kahlua and Eespresso",
+    page: 10.99,
   },
   {
-    name: "for your health",
-    message:
-      "Ceres Vodka . matcha. apple shrub . honey . lemon . almond falernum . cayenne . turmeric",
-    page: 17,
+    name: "Peach bellini",
+    message: "Fancy italian wine cocktail with prosecco & peach puree'",
+    page: 10.99,
   },
   {
-    name: "cat's pajamas",
-    message:
-      "El Dorado 3 year Rum . Suze . passionfruit . cardamom . thai long peppercorn . honey . lime . thai bitters",
-    page: 17,
+    name: "Straw-man pina coloda",
+    message: "Hawaiian pina colada with strawberry rum and Mango puree'",
+    page: 10.99,
   },
   {
-    name: "kind of a big dill",
+    name: "Cosmopolitan",
     message:
-      "Broker's Gin . dill . Gonzalez Byass vermouth . cucumber . Lillet Blanc . seasonal pickle",
-    page: 17,
+      "IBA official lip-smacking sweet and sour cocktail with vodka , Cointreau , Cranberry and lime juice",
+    page: 9.99,
+  },
+  {
+    name: "Hakuna matata",
+    message:
+      "A mixture of coconut rum , Spiced rum , Pineapple and Banana Creme",
+    page: 9.99,
+  },
+  {
+    name: "Aperol spritz",
+    message:
+      "One of the classic italian wine-based drink with prosecco bitters and soda",
+    page: 9.99,
+  },
+  {
+    name: "Moscow mule",
+    message:
+      "Most refreshing thing to sip with vodka, lime juice and ginger beer",
+    page: 9.99,
+  },
+  {
+    name: "Paloma",
+    message:
+      "Mexican thirst-quenching combination of tequila, lime and grapefruit soda",
+    page: 9.99,
+  },
+  {
+    name: "Red sangria",
+    message:
+      "A spanish drink made of red wine, orange or lemon juice , soda and cherry brandy",
+    page: 10.99,
+  },
+  {
+    name: "White sangria",
+    message: "Crisp white wine, fresh fruit and sherry",
+    page: 10.99,
+  },
+];
+
+export const coffeContent = [
+  {
+    name: "Espresso",
+    message: "",
+    page: 4.25,
+  },
+  {
+    name: "Americano",
+    message: "",
+    page: 4.5,
+  },
+  {
+    name: "Affogato",
+    message: "",
+    page: 5.75,
+  },
+  {
+    name: "Cappuccino",
+    message: "",
+    page: 4.95,
+  },
+  {
+    name: "Cafe Latte",
+    message: "",
+    page: 5.75,
+  },
+  {
+    name: "Mocha",
+    message: "",
+    page: 5.95,
+  },
+  {
+    name: "Macchiato",
+    message: "",
+    page: 3.95,
+  },
+  {
+    name: "Hot chocolate",
+    message: "",
+    page: 4.25,
+  },
+  {
+    name: "London fog",
+    message: "",
+    page: 5.25,
+  },
+  {
+    name: "Coffee",
+    message: "",
+    page: 3.0,
+  },
+  {
+    name: "Decaf coffee",
+    message: "",
+    page: 3.25,
+  },
+  {
+    name: "Speciality tea",
+    message: "",
+    page: 3.0,
+  },
+  {
+    name: "Pops",
+    message: "",
+    page: 3.5,
   },
 ];
 
 export const beerContent = [
   {
-    name: "Trumer Pils",
-    message: "german-style pilsner . Berkeley, CA (4.9% abv) 12oz",
-    page: 8,
+    name: "Bud light lager",
+    message: "",
+    page: 8.75,
   },
   {
-    name: "BuckleDown Brewing Belt & Suspenders",
-    message: "IPA . Lyons, IL (7% abv) 16oz",
-    page: 10,
+    name: "Stella artois euro lager",
+    message: "",
+    page: 10.99,
   },
   {
-    name: "Spiteful God Damn Pigeon",
-    message: "porter . Chicago, IL (8.2% abv) 16oz",
-    page: 10,
+    name: "Mill st organic lager",
+    message: "",
+    page: 8.75,
   },
   {
-    name: "Hopewell Ride or Die",
-    message: "pale ale . Chicago, IL (5.5% abv)",
-    page: 8,
+    name: "Michelob ultra light lager",
+    message: "",
+    page: 8.75,
   },
   {
-    name: "Roadhouse Brewing Co The Walrus",
-    message: "hazy IPA with peach & tangerine . Jackson, WY (6.9% abv) 16oz",
-    page: 13,
+    name: "Labatt 50 ale",
+    message: "",
+    page: 8.75,
+  },
+  {
+    name: "Moosehead lager",
+    message: "",
+    page: 8.75,
+  },
+  {
+    name: "Moosehead small batch east coast ipa",
+    message: "",
+    page: 8.75,
+  },
+  {
+    name: "James ready lager",
+    message: "",
+    page: 6.99,
+  },
+  {
+    name: "Twisted tea",
+    message: "",
+    page: 8.75,
+  },
+  {
+    name: "Mackinnon brother's crosscut ale",
+    message: "",
+    page: 8.75,
+  },
+  {
+    name: "Mackinnon brother's 8 man epa",
+    message: "",
+    page: 8.75,
   },
 ];
 
 export const ciderContent = [
   {
-    name: "Right Bee Clementine",
-    message: "Chicago, IL (6% abv)",
-    page: 9,
+    name: "Corona lager (330 ml)",
+    message: "",
+    page: 7.75,
   },
   {
-    name: "Isastegi",
-    message: "Basque Country, Spain . 750 mL (6% abv)",
-    page: 24,
+    name: "Modelo especial pilsner (355 ml)",
+    message: "",
+    page: 7.75,
+  },
+  {
+    name: "Alexander keith's session ale (341 ml)",
+    message: "",
+    page: 6.75,
+  },
+  {
+    name: "Budweiser lager (330 ml)",
+    message: "",
+    page: 7.75,
+  },
+  {
+    name: "Heineken (330 ml)",
+    message: "",
+    page: 7.75,
+  },
+  {
+    name: "Molson canadian (355 ml)",
+    message: "",
+    page: 6.75,
   },
 ];
 
 export const spiritContent = [
   {
-    name: "Go Brewing Suspended in a Sunbeam",
-    message: "pilsner . Naperville, IL ( 0.5% abv) 12oz",
-    page: 8,
+    name: "Habibi's sharjah",
+    message:
+      "Vanilla ice-cream shake with banana , Cashew nuts , Frozen milk and cocoa",
+    page: 7.45,
   },
   {
-    name: "spicy boy",
-    message: "tarragon . pomegranate . jalapeño . ginger . lime",
-    page: 10,
+    name: "Cr\u00E9m\u00E9 mangue",
+    message: "Vanilla ice-cream shaked with mango pure and mango chunks",
+    page: 7.45,
+  },
+];
+
+export const smoothies = [
+  {
+    name: "Strawberry banana smoothie",
+    message: "Classic healthy smoothie with strawberry banana yogurt",
+    page: 7.45,
   },
   {
-    name: "phony negroni",
-    message: "St. Agrestis . Brooklyn, NY . 6.76oz",
-    page: 15,
+    name: "Mango pineapple smoothie",
+    message: "Summer healthy smoothie with mango pineapple yogurt",
+    page: 7.45,
+  },
+];
+
+export const mocktails = [
+  {
+    name: "Virgin mojito",
+    message:
+      "Cool down your day with a refreshing drink of mint, lime juice and soda",
+    page: 7.45,
+  },
+  {
+    name: "Italian soda",
+    message: "Mix of flavoured syrup with soda water and top up with cream",
+    page: 5.75,
   },
 ];
 
 export const winesContent = [
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "NV prosecco spumante - nua - piedmont, italy",
+    message: "",
+    oz: 11,
+    glass: "-",
+    bottle: 45,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Rosé peninsula niagara VQA",
+    message: "",
+    oz: 11,
+    glass: 31,
+    bottle: 45,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Riesling-stoney ridge estate winery, niagra",
+    message: "",
+    oz: 9.5,
+    glass: 27,
+    bottle: 42,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Chenin blanc, franschhoek vineyards, south africa",
+    message: "",
+    oz: 10.5,
+    glass: 31,
+    bottle: 45,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Chardonnay-costal vines- california",
+    message: "",
+    oz: 12,
+    glass: 34,
+    bottle: 52,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Sauvignon blanc 'civis'-terranoble, casablanca valley, chile",
+    message: "",
+    oz: 12,
+    glass: 35,
+    bottle: 52,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Pinot grigio-terre gaie - veneto, italy",
+    message: "",
+    oz: 12,
+    glass: 35,
+    bottle: 53,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Merlot-peninsula ridge estates winery, niagara",
+    message: "",
+    oz: 9.5,
+    glass: 27,
+    bottle: 42,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Shiraz 'hillside' - tall poppy, victoria, australia",
+    message: "",
+    oz: 11.5,
+    glass: 33,
+    bottle: 49,
   },
   {
-    name: "prosecco",
-    message: "Le Colture . Brut Fagher . Valdobbiadene",
-    glass: 16,
-    bottle: 80,
+    name: "Chianti 'villa di monte'- grati, tuscany, italy",
+    message: "",
+    oz: 12,
+    glass: 34,
+    bottle: 50,
+  },
+  {
+    name: "Cabernet sauvignon - coastal vines, california",
+    message: "",
+    oz: 12,
+    glass: 35,
+    bottle: 53,
+  },
+  {
+    name: "Malbec-septima, mendoza, argentina",
+    message: "",
+    oz: 12,
+    glass: 35,
+    bottle: 53,
   },
 ];
 
@@ -171,16 +368,28 @@ export const winesContent = [
 
 export const breadContent = [
   {
-    name: "Tender Mix Green Salad GF",
+    name: "Tender mix green, GF, Veg",
     message:
-      "artisanal Greens . shaved carrots . cucumber . bell peppers . balasmic dressing. signature house salad",
+      "Ontario-grown spring mix , Shaved carrots , Cucumber , Bell peppers , Balsamic dressing , (small - 10)",
     page: 15,
   },
   {
-    name: "Caesar Salad",
+    name: "Signature house salad, Veg",
     message:
-      "crisp romaine . parmesan . garlic croutons . bacon . creamy caesar dressing . add chicken - $9 or shrimp $12",
+      "Quinoa , Shredded kale , Shaved brussels sprouts , Cranberry , Citrus dressing",
+    page: 18,
+  },
+  {
+    name: "Ensalada caesar salad",
+    message:
+      "Crisp romaine , Parmesan , Garlic croutons , Bacon , Creamy caesar dressing , Add chicken - 9 or Shrimp 12 , (small - 12)",
     page: 17,
+  },
+  {
+    name: "Soup of the day",
+    message:
+      "Ask your server for today's delicious selection , Crafted to warm and delight your palate",
+    page: 9,
   },
 ];
 
@@ -199,152 +408,157 @@ export const veggiesContent = [
 
 export const fishContent = [
   {
-    name: "Sambal Chicken Skewers GF",
-    message: "four skewers . sambal oelek . sweet chilly",
-    page: 18,
+    name: "Sambal chicken skewers",
+    message: "Sambal oelek , Sweet chilly",
+    page: 16,
   },
   {
-    name: "Togarashi Sesame Crusted Tuna",
-    message: "soba noodles . julienne cut vegetables with asian dressing",
+    name: "Togarashi sesame crusted tuna",
+    message: "Soba noodles , Julienne vegetables , Asian vinaigrette",
     page: 29,
   },
   {
-    name: "Avocado Infused Hummus GF, Veg",
-    message: "served with fresh seasonal vegetables and pumpkin seeds",
+    name: "Avocado infused hummus, Veg",
+    message: "Pistachio dukkah , Pomegranate , Pita bread",
     page: 16,
   },
   {
-    name: "Jalapeno Poppers, Veg",
-    message:
-      "deep fried breaded jalapeno .  creamy cheese filling . parmesan . raspberry sauce",
+    name: "Tater bombs",
+    message: "Potato , Bacon , Mint sauce , Spiced yougurt , Sev",
     page: 16,
   },
   {
-    name: "Ricotta Rendezvous",
+    name: "Ricotta rendezvous, Veg",
     message:
-      "ricotta cheese . sour dough . spice roasted cherry tomatoes . creamy roasted bell pepper",
+      "Whipped ricotta cheese , Sourdough , Herbed mixed cherry tomatoes , Bell pepper pesto",
     page: 17,
   },
   {
-    name: "Turkey Delight Poutine",
-    message: "braised turkey . cranberry mayo . crispy kale",
-    page: 18.3,
-  },
-  {
-    name: "Chicken Wings",
-    message: "sticky bbq glaze/honey garlic/house hot sauce",
+    name: "Turkey delight poutine",
+    message:
+      "Braised turkey , Cranberry mayo , Fresh quebec cheese curd , crispy kale",
     page: 18,
   },
   {
-    name: "Coco-licious Shrimp GF",
-    message: "house sauce . grated coconut . curry leaves",
+    name: "Crispy wings",
+    message:
+      "1 Lb of crispy chicken wings tossed in our signature maple, Tamarind sauce or your choice of honey garlic, bbq, buffalo sauce or sweet chili",
+    page: 18,
+  },
+  {
+    name: "Coco-licious shrimp, GF",
+    message: "House sauce , Grated coconut , Curry leaves",
     page: 25,
   },
   {
-    name: "Keetle Chip Nachos - Small",
+    name: "Kettle chip nachos",
     message:
-      "kettle chips . jalapeno . 3 cheese . salsa sour cream . add guac - $3 . add chicken - $6 . add beef - $6 . ( Large - $21)",
-    page: 17,
+      "Jalapeno , Bacon , Banana pepper , 3 cheese , salsa , sour cream , add guac - 3 , add chicken/beef - $6 , (small - 17)",
+    page: 21,
   },
   {
-    name: "Mercury Beef Medley",
-    message: "crispy beef strips . jalapeno . peppers . honey garlic",
-    page: 24.5,
-  },
-  {
-    name: "Chicken Fingers",
-    message: "5 pc of chicken fingers . plum sauce",
-    page: 18,
+    name: "Mercury beef medley",
+    message:
+      "Crispy beef strips , Garam masala , Peruvian chilli , Bell pepper",
+    page: 24,
   },
 ];
 
 export const goatContent = [
   {
-    name: "Itaewon Beef Burger",
+    name: "Itaewon beef burger",
     message:
-      "pulled beef brisket . gochujang mayo . kimchi . aged cheddar . side of house fries or salad",
+      "Pulled beef brisket , Gochujang mayo , Kimchi , Smoked cheddar , Side of house fries or salad",
     page: 20,
   },
   {
-    name: "Pasta Chicken Wrap",
+    name: "Falafel wrap, Veg",
     message:
-      "pasta salad with chicken stuffed in tortilla . side of house fries or salad",
-    page: 19,
+      "Smashed falafel , Hummus , Pickled onion , Mint aioli , Side of house fries or salad",
+    page: 16,
   },
 ];
 
 export const meatContent = [
   {
-    name: "Confit Duck & Waffle",
-    message: "crispy duck leg . sunnyside egg . mustard maple syrup",
+    name: "Confit duck & waffle",
+    message: "Crispy duck , Sunnyside egg , Mustard maple syrup",
     page: 34,
   },
   {
-    name: "Fish N Chips",
-    message:
-      "house made coleslaw . mashed peas . tartar sauce and crisp chips . add extra pc of fish - $6",
+    name: "Fish n chips",
+    message: "Seared haddock , Musky peas , Tartar sauce and crisp chips",
     page: 19,
   },
   {
-    name: "Butter Chicken GF",
+    name: "Butter chicken supreme",
     message:
-      "creamy tomato and cashew sauce . sous vide chicken . basmati rice",
+      "Creamy tomato-cashew sauce , sous-vide chicken , basmati rice and naan",
     page: 26,
   },
   {
-    name: "Flame - Kissed Stripolin GF",
+    name: "Flame - kissed Striploin",
     message:
-      "fire grilled 10oz stripolin . seasonal vegetable . demi glaze . add shrims - $8. choice f mash potatoes or fries or caesar salad",
-    page: 37,
+      "Fire grilled AAA 8oz Striploin , Seasonal vegetable , Demi glaze , Add shrims - $8 , Choice of mashed potatoes/fries/caesar salad",
+    page: 40,
   },
   {
-    name: "Seared Salmon GF",
-    message: "salmon fillet . thai' bean ragu . seasonal vegetable",
+    name: "Seared salmon, GF",
+    message: "Thai bean ragu , seasonal vegetable",
+    page: 34,
+  },
+  {
+    name: "Rustic lamb shank",
+    message:
+      "Slow-cooked lamb shank on a bed of mashed potatoes , Seasonal vegetables and jus",
     page: 35,
   },
   {
-    name: "Rustic Lamb Shank GF",
-    message:
-      "slow cooked lamb shank on a bed of mash potato . seasonal vegetables and jus",
-    page: 35,
-  },
-  {
-    name: "Korean BBQ Short Ribs GF",
-    message: "marinated beef short ribs . rice . kimchi . sauteed vegetables",
+    name: "Korean bbq short ribs, GF",
+    message: "Marinated beef short ribs , Rice , Kimchi , Sauteed vegetables",
     page: 29,
   },
   {
-    name: "Moroccan Harvest Stew (Vegan, GF)",
-    message: "moroccan spiced vegetable stew . coconut cream and basmati rice",
+    name: "Moroccan harvest stew, GF, Veg",
+    message: "Moroccan spiced vegetable stew , Coconut cream , basmati rice",
     page: 19,
   },
   {
-    name: "Seafood Linguine",
-    message: "shrimp . scallops . mussels . tomato sauce . olive oil",
-    page: 27,
+    name: "Seafood linguine",
+    message: "Shrimp , Hokkaido Scallops , Mussels , House-made tomato sauce",
+    page: 28,
   },
   {
-    name: "Seasonal Vegetabe Penne Veg",
-    message:
-      "rose sauce . seasonal vegetable . gluten free past available . side - mash potato - $6 . basmati rice - $6 . fries - $6",
+    name: "Pasta primavera, Veg",
+    message: "Penne , Seasonal vegetable , Ros\u00E9 sauce",
     page: 20,
   },
 ];
 
 export const dessertContent = [
   {
-    name: "Chocolate Decadence GF, Vegan",
-    message: "coconut cream . chocolate glaze",
+    name: "Chocolate decadence, GF",
+    message: "Coconut cream , Chocolate glaze",
     page: 11,
   },
   {
-    name: "Caramel Affogato GF",
-    message: "vanilla ice cream . espresso",
+    name: "Caramel affogato, GF",
+    message: "Vanilla ice cream , Espresso",
     page: 13,
   },
   {
-    name: "Mango Panna Cotta GF",
-    message: "silky smooth cream . mango jelly",
+    name: "Mango panna cotta",
+    message: "Silky smooth cream , Mango jelly",
+    page: 14,
+  },
+  {
+    name: "New york cheese cake",
+    message: ",",
     page: 12,
+  },
+  {
+    name: "Ice cream",
+    message: "Ask your server for flavors",
+    page: 9,
   },
 ];

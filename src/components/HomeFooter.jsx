@@ -1,5 +1,8 @@
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { LiaFacebookSquare } from "react-icons/lia";
+import { PiTiktokLogo } from "react-icons/pi";
+import { Link } from "react-router-dom";
+
 
 export const Footer = () => {
   return (
@@ -19,10 +22,17 @@ export const Footer = () => {
               <p className="py-1 md:py-0">Press Inquiries</p>
               <p className="py-1 md:py-0">Email Newsletter</p>
             </div> */}
-            {/* <div className="flex justify-center items-center">
-              <LiaFacebookSquare className="h-8 w-8 mr-4 md:h-10 md:w-10" />
-              <FaInstagram className="h-8 w-8 md:h-9 md:w-9" />
-            </div> */}
+            <div className="flex justify-center gap-x-4 items-center">
+              <Link to={"https://www.facebook.com/profile.php?id=61561317833343"} target="_blank">
+              <LiaFacebookSquare className="h-8 w-8 md:h-10 md:w-10 cursor-pointer" />
+              </Link>
+              <Link to={"https://www.instagram.com/themercury.ca/"} target="_blank">
+              <FaInstagram className="h-8 w-8 md:h-9 md:w-9 cursor-pointer" />
+              </Link>
+              <Link to={"https://www.tiktok.com/@mercury.barandlounge?is_from_webapp=1&sender_device=pc"} target="_blank">
+              <PiTiktokLogo className="h-7 w-7 md:h-9 md:w-9 cursor-pointer"/>
+              </Link>
+            </div>
           </div>
 
           {/* <p className="text-xs md:text-sm pt-2">
